@@ -1,0 +1,61 @@
+body{ counter-reset: section; }
+.count:before{
+	counter-increment: section;
+	content:counter(section);
+}
+#page-wrap { width: 900px; margin: 0 auto; }
+#bill_logo{
+	padding-top:10px;
+	height:150px;
+	width:500px;
+}
+#logoline{color: white;font-style: italic;font-family: sans-serif;background: #33337d;line-height: 30px;width:500px;padding-left:25px;}
+textarea { border: 0; font: 14px Georgia, Serif; overflow: hidden; resize: none; }
+table { border-collapse: collapse; border-color: #33337d}
+table td, table th {  padding: 3px;}
+tfoot td{border: 1px solid blue;}
+
+#header { height: 15px; width: 100%; margin: 20px 0; background: #222; text-align: center; color: white; font: bold 15px Helvetica, Sans-Serif; text-decoration: uppercase; letter-spacing: 20px; padding: 8px 0px; }
+.contain{ padding:5px; }
+#address { width: 250px; height: 150px; float: left; }
+#customer { overflow: hidden; }
+
+#logo { text-align: right; float: right; position: relative; margin-top: 25px; border: 1px solid #fff; max-width: 540px; max-height: 100px; overflow: hidden; }
+#logo:hover, #logo.edit { border: 1px solid #000; margin-top: 0px; max-height: 125px; }
+#logoctr { display: none; }
+#logo:hover #logoctr, #logo.edit #logoctr { display: block; text-align: right; line-height: 25px; background: #e1e1f3; padding: 0 5px; }
+#logohelp { text-align: left; display: none; font-style: italic; padding: 10px 5px;}
+#logohelp input { margin-bottom: 5px; }
+.edit #logohelp { display: block; }
+.edit #save-logo, .edit #cancel-logo { display: inline; }
+.edit #image, #save-logo, #cancel-logo, .edit #change-logo, .edit #delete-logo { display: none; }
+#customer-title { font-size: 20px; font-weight: bold; float: left; }
+
+#meta { margin-top: 10px; width: 250px; float: right; }
+#meta td { border: 1px solid blue;text-align: right;  }
+#meta td.meta-head { text-align: left; background: #e1e1f3; }
+#meta td textarea { width: 100%; height: 20px; text-align: right; }
+
+#items {  width: 100%; border:1px solid blue;margin:5px; }
+#items td { border:1px solid blue;margin:5px; }
+#items th { background: #e1e1f3; }
+#items textarea { width: auto; height: 30px; }
+#items tr.item-row td { border-right: 1px solid blue;;vertical-align: top; }
+#items td.description { width: 200px; }
+#items td.item-name {}
+#items td.description textarea, #items td.item-name textarea { width: auto; height:30px;}
+#items td.total-line { border-right: 0; text-align: right; }
+#items td.total-value { border-left: 0; padding: 10px; }
+#items td.total-value textarea { height: 20px; background: none; }
+#items td.balance { background: #e1e1f3; }
+#items td.blank { border: 0; }
+
+#terms { text-align: center; margin: 20px 0 0 0; }
+#terms h5 { text-transform: uppercase; font: 13px Helvetica, Sans-Serif; letter-spacing: 10px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
+#terms textarea { width: 100%; text-align: center;}
+
+textarea:hover, textarea:focus, #items td.total-value textarea:hover, #items td.total-value textarea:focus, .delete:hover { background-color:#EEFF88; }
+textarea { width: auto; height: 30px; }
+th { background: #e1e1f3; }
+.delete-wpr { position: relative; }
+.delete { display: block; color: #000; text-decoration: none; position: absolute; background: #e1e1f3e1e1f3; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; left: -22px; font-family: Verdana; font-size: 12px; }
